@@ -22,10 +22,11 @@
     }
   },
   "prettier": {
-    "printWidth": 80,
+    "arrowParens": "always",
     "semi": true,
+    "printWidth": 100,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "all"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
