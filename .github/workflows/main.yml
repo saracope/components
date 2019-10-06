@@ -11,28 +11,28 @@ jobs:
         node-version: [10.x, 12.x]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
-      run: yarn install
-      env:
-        CI: true
-    - name: Lint
-      run: yarn lint
-      env:
-        CI: true
-    - name: Test
-      run: yarn test
-      env:
-        CI: true
-    - name: Code Climate Coverage Action
-      uses: paambaati/codeclimate-action@v2.2.1
-      env:
-        CC_TEST_REPORTER_ID: <code_climate_reporter_id>
-    - name: Build
-      run: yarn build
-      env:
-        CI: true
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: yarn install
+        env:
+          CI: true
+      - name: Lint
+        run: yarn lint
+        env:
+          CI: true
+      - name: Test
+        run: yarn test
+        env:
+          CI: true
+      - name: Code Climate Coverage Action
+        uses: paambaati/codeclimate-action@v2.2.1
+        env:
+          CC_TEST_REPORTER_ID: <code_climate_reporter_id>
+      - name: Build
+        run: yarn build
+        env:
+          CI: true
