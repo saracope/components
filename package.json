@@ -8,6 +8,7 @@
     "dist"
   ],
   "scripts": {
+    "coverage": "yarn test --coverage=\"true\"",
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
