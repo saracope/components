@@ -19,9 +19,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Twitter Follow](https://img.shields.io/twitter/follow/operation_code.svg?style=social&label=Follow&style=social)](https://twitter.com/operation_code)
 
-[![CircleCI](https://circleci.com/gh/OperationCode/components/tree/master.svg?style=svg)](https://circleci.com/gh/OperationCode/components/tree/master)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5010b82ce5d8e319a597/test_coverage)](https://codeclimate.com/github/OperationCode/components/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5010b82ce5d8e319a597/maintainability)](https://codeclimate.com/github/OperationCode/components/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5d9a564cc401ea018e0034a7/test_coverage)](https://codeclimate.com/github/OperationCode/components/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5d9a564cc401ea018e0034a7/maintainability)](https://codeclimate.com/github/OperationCode/components/maintainability)
 
 [See unblocked, unassigned issues](https://github.com/OperationCode/components/issues?q=is%3Aopen+is%3Aissue+-label%3A%22Status%3A+Blocked%22+no%3Aassignee). We love our labels - feel free to filter issues to find what you want to work on.
 
