@@ -12,26 +12,30 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: Install dependencies
         run: yarn install
         env:
           CI: true
+
       - name: Lint
         run: yarn lint
         env:
           CI: true
-      - name: Test
-        run: yarn test
+
+      - name: Test and report coverage
+        uses: paambaati/codeclimate-action@v2.4.0
         env:
           CI: true
-      - name: Code Climate Coverage Action
-        uses: paambaati/codeclimate-action@v2.2.1
-        env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageCommand: yarn test --ci --coverage --maxWorkers=2
+
       - name: Build
         run: yarn build
         env:
