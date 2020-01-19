@@ -25,7 +25,7 @@ jobs:
         env:
           CI: true
       - name: Test
-        run: yarn test
+        run: yarn test --ci --coverage --maxWorkers=2
         env:
           CI: true
       - name: Code Climate Coverage Action
