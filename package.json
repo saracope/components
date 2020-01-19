@@ -12,24 +12,11 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
-    "lint": "tsdx lint src",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": ">=16"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
-  },
-  "prettier": {
-    "arrowParens": "always",
-    "semi": true,
-    "printWidth": 100,
-    "singleQuote": true,
-    "trailingComma": "all"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.1.0",
@@ -41,6 +28,7 @@
     "@types/react-dom": "^16.9.1",
     "@types/user-event": "^4.1.0",
     "husky": "^3.0.8",
+    "lint-staged": "^9.5.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "tsdx": "^0.9.3",
