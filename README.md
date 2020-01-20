@@ -24,7 +24,7 @@ This is the React component library for [OperationCode](https://operationcode.or
 
 ## Quick Start
 
-TBD
+Want to create a new component? Simply run `yarn create:component COMPONENT_NAME` to match the existing structure for a new component.
 
 ## Contributing
 
